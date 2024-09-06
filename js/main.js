@@ -107,6 +107,11 @@
         loop: true,
         items: 1
     });
+
+    // add click event to all buttons with class appointment-btn
+    $(".appointment-btn").click(function() {
+        $(".qxCTlb").click();
+    });
     
 })(jQuery);
 

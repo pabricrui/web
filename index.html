@@ -162,7 +162,7 @@
                   stet. Sadips duo stet amet amet ndiam elitr ipsum labore diam
                 </p>
                 <a
-                  class="btn btn-outline-light py-3 px-4 mt-3 animate__animated animate__fadeInUp"
+                  class="btn btn-outline-light py-3 px-4 mt-3 animate__animated animate__fadeInUp appointment-btn"
                   href="#"
                   >Make Appointment</a
                 >
@@ -196,7 +196,7 @@
                   stet. Sadips duo stet amet amet ndiam elitr ipsum labore diam
                 </p>
                 <a
-                  class="btn btn-outline-light py-3 px-4 mt-3 animate__animated animate__fadeInUp"
+                  class="btn btn-outline-light py-3 px-4 mt-3 animate__animated animate__fadeInUp appointment-btn"
                   href="#"
                   >Make Appointment</a
                 >
@@ -230,7 +230,7 @@
                   stet. Sadips duo stet amet amet ndiam elitr ipsum labore diam
                 </p>
                 <a
-                  class="btn btn-outline-light py-3 px-4 mt-3 animate__animated animate__fadeInUp"
+                  class="btn btn-outline-light py-3 px-4 mt-3 animate__animated animate__fadeInUp appointment-btn"
                   href="#"
                   >Make Appointment</a
                 >
@@ -381,82 +381,31 @@
         <div class="col-lg-6 py-5">
           <div class="p-5 my-5" style="background: rgba(33, 30, 28, 0.7)">
             <h1 class="text-white text-center mb-4">Make Appointment</h1>
-            <form>
-              <div class="form-row">
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      class="form-control bg-transparent p-4"
-                      placeholder="Your Name"
-                      required="required"
-                    />
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <input
-                      type="email"
-                      class="form-control bg-transparent p-4"
-                      placeholder="Your Email"
-                      required="required"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <div class="date" id="date" data-target-input="nearest">
-                      <input
-                        type="text"
-                        class="form-control bg-transparent p-4 datetimepicker-input"
-                        placeholder="Select Date"
-                        data-target="#date"
-                        data-toggle="datetimepicker"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <div class="time" id="time" data-target-input="nearest">
-                      <input
-                        type="text"
-                        class="form-control bg-transparent p-4 datetimepicker-input"
-                        placeholder="Select Time"
-                        data-target="#time"
-                        data-toggle="datetimepicker"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <select
-                      class="custom-select bg-transparent px-4"
-                      style="height: 47px"
-                    >
-                      <option selected>Select A Service</option>
-                      <option value="1">Service 1</option>
-                      <option value="2">Service 1</option>
-                      <option value="3">Service 1</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <button
-                    class="btn btn-primary btn-block"
-                    type="submit"
-                    style="height: 47px"
-                  >
-                    Make Appointment
-                  </button>
-                </div>
-              </div>
-            </form>
+            <div class="d-flex justify-content-center">
+                <!-- Google Calendar Appointment Scheduling begin -->
+                <link
+                  href="https://calendar.google.com/calendar/scheduling-button-script.css"
+                  rel="stylesheet"
+                />
+                <script
+                  src="https://calendar.google.com/calendar/scheduling-button-script.js"
+                  async
+                ></script>
+                <script>
+                  (function () {
+                    var target = document.currentScript;
+                    window.addEventListener("load", function () {
+                      calendar.schedulingButton.load({
+                        url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ0faMy1Npe6FdjbWH-J14qOzpdVK7YoMy7nyXSceFPYitHxGpRZIMQKuEzqKFEeeTmiCtioGfAJ?gv=true",
+                        color: "#F9A392",
+                        label: "Book an appointment",
+                        target,
+                      });
+                    });
+                  })();
+                </script>
+                <!-- end Google Calendar Appointment Scheduling -->
+            </div>
           </div>
         </div>
       </div>
@@ -669,29 +618,7 @@
     ></iframe> -->
     <!-- Calendar end -->
     <!-- Booking test start -->
-    <!-- Google Calendar Appointment Scheduling begin -->
-    <link
-      href="https://calendar.google.com/calendar/scheduling-button-script.css"
-      rel="stylesheet"
-    />
-    <script
-      src="https://calendar.google.com/calendar/scheduling-button-script.js"
-      async
-    ></script>
-    <script>
-      (function () {
-        var target = document.currentScript;
-        window.addEventListener("load", function () {
-          calendar.schedulingButton.load({
-            url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ0faMy1Npe6FdjbWH-J14qOzpdVK7YoMy7nyXSceFPYitHxGpRZIMQKuEzqKFEeeTmiCtioGfAJ?gv=true",
-            color: "#039BE5",
-            label: "Book an appointment",
-            target,
-          });
-        });
-      })();
-    </script>
-    <!-- end Google Calendar Appointment Scheduling -->
+
     <!-- Booking test end -->
 
     <!-- Team Start -->
