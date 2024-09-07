@@ -52,7 +52,7 @@
     // Service carousel
     $(".service-carousel").owlCarousel({
         autoplay: true,
-        smartSpeed: 1500,
+        smartSpeed: 1000,
         loop: true,
         dots: false,
         nav : false,
