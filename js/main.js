@@ -112,6 +112,16 @@
     $(".appointment-btn").click(function() {
         $(".qxCTlb").click();
     });
+
+    // add smooth scrolling to all links
+    $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+    
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 500);
+    });
+    
     
 })(jQuery);
 
