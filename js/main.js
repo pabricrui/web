@@ -75,6 +75,23 @@
         }
     });
 
+    // Service carousel
+    $(".service-carousel-company").owlCarousel({
+        autoplay: false,
+        smartSpeed: 1000,
+        loop: false,
+        dots: false,
+        nav : false,
+        responsive: {
+            0:{
+                items:1
+            },
+            576:{
+                items:2
+            }
+        }
+    });
+
 
     // Pricing carousel
     $(".pricing-carousel").owlCarousel({
