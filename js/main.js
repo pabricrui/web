@@ -137,34 +137,7 @@
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 500);
-    });
-
-
-    // Dropdown on mouse hover
-    $(document).ready(async () => {
-        // const placeId = "ChIJLdM3VGHZBUgRu3V2GNgM2vc"
-        // const apiKey = "AIzaSyCvSF_qfTqJ5g5R6huWUg_Eb3uUjxgyEpY"
-        // const data = await fetch(`https://maps.googleapis.com/maps/api/place/details/json?placeid=${placeId}&key=${apiKey}`)
-        // console.log("place data", data);
-
-        // const mapApiKey = "AIzaSyCvSF_qfTqJ5g5R6huWUg_Eb3uUjxgyEpY"
-        // var request = {
-        //     placeId: 'ChIJLdM3VGHZBUgRu3V2GNgM2vc',
-        //     fields: ['name', 'rating', 'formatted_phone_number', 'geometry']
-        //   };
-          
-        //   service = new google.maps.places.PlacesService(map);
-        //   service.getDetails(request, callback);
-          
-        //   function callback(place, status) {
-        //     console.log("place", place);
-        //     console.log("place", place);
-        //     if (status == google.maps.places.PlacesServiceStatus.OK) {
-        //     //   createMarker(place);
-        //     }
-        //   }
-    });
-    
+    });    
     
 })(jQuery);
 
