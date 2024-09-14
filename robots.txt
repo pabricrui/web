@@ -1,1 +1,2 @@
 User-agent: *
+Sitemap: https://patricia-guerchet-reflexologue.com/sitemap.xml
